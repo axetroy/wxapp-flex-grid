@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import "var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container, .container-fluid {
+  padding-right: $padding;
+  padding-left: $padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col, .row {
+  display: flex;
+  margin-left: -$padding;
+  margin-right: -$padding;
+  &::after, &::before {
+    content: "";
+    clear: both;
+  }
+}
+
+// 排序
+@for $i from 0 through $grid {
+  .order-#{$i} {
+    order: $i
+  }
+}
+
+*[class^=col-] {
+  position: relative;
+  min-height: 1px;
+  padding-right: $padding;
+  padding-left: $padding;
+}
+
+// col
+@for $i from 0 through $grid {
+  .col-#{$i} {
+    flex: 0 0 percentage($i/$grid);
+    width: 100%;
+  }
+}
+
+// offset
+@for $i from 0 through $grid {
+  .offset-#{$i} {
+    margin-left: percentage($i/$grid);
+  }
+}
+
+// pull
+@for $i from 0 through $grid {
+  .pull-#{$i} {
+    right: percentage($i/$grid);
+  }
+}
+
+// push
+@for $i from 0 through $grid {
+  .push-#{$i} {
+    left: percentage($i/$grid);
+  }
+}
+
+// align-items
+@each $alignItemWay in $align-item-list {
+  .align-item-#{$alignItemWay} {
+    align-items: $alignItemWay
+  }
+}
+
+// 多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+@each $alignContentWay in $align-content-list {
+  .align-content-#{$alignContentWay} {
+    align-content: $alignContentWay
+  }
+}
+
+@each $justifyContentWay in $justify-content-list {
+  .justify-content-#{$justifyContentWay} {
+    justify-content: $justifyContentWay
+  }
+}
+
+// 放大
+@for $i from 0 through $grid {
+  .grow-#{$i} {
+    flex-grow: $i
+  }
+}
+
+// 缩小比例 default:1
+@for $i from 0 through $grid {
+  .shrink-#{$i} {
+    flex-shrink: $i
+  }
+}
+
+// 换行
+@each $wrapWay in $wrap-list {
+  .#{$wrapWay} {
+    flex-wrap: $wrapWay
+  }
+}
+
+.middle {
+  @extend .justify-content-center;
+  @extend .align-item-center;
+}
