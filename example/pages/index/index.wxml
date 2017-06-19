@@ -1,0 +1,177 @@
+<div>
+  <p>Grid system</p>
+  <div class="row">
+    <div class="col-1 box">1/12</div>
+    <div class="col-11 box">11/12</div>
+  </div>
+  <div class="row">
+    <div class="col-2 box">
+      col-2
+    </div>
+    <div class="col-10 box">
+      col-10
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3 box">
+      col-3
+    </div>
+    <div class="col-9 box">
+      col-9
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 box">
+      col-4
+    </div>
+    <div class="col-8 box">
+      col-8
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5 box">
+      col-5
+    </div>
+    <div class="col-7 box">
+      col-7
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 box">
+      col-6
+    </div>
+    <div class="col-6 box">
+      col-6
+    </div>
+  </div>
+  <div style="width:100%">
+    <div style="display:inline-block;width:50%;background-color:red;text-indent:10px">50%</div>
+    <div style="display:inline-block;width:50%;background-color:yellow;text-indent:10px">50%</div>
+  </div>
+  <p>Float system</p>
+  <!--offset-->
+  <div class="row">
+    <div class="col-6 offset-0 box">
+      col-6 offset-0
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-1 box">
+      col-6 offset-1
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-2 box">
+      col-6 offset-2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-3 box">
+      col-6 offset-3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-4 box">
+      col-6 offset-4
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-5 box">
+      col-6 offset-5
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-6 box">
+      col-6 offset-6
+    </div>
+  </div>
+  <!--push-->
+  <div class="row">
+    <div class="col-6 push-6 box">
+      col-6 push-6
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-5 box">
+      col-6 push-5
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-4 box">
+      col-6 push-4
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-3 box">
+      col-6 push-3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-2 box">
+      col-6 push-2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-1 box">
+      col-6 push-1
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 push-0 box">
+      col-6 push-0
+    </div>
+  </div>
+
+  <!--pull-->
+  <div class="row">
+    <div class="col-6 pull-0 box">
+      col-6 pull-0
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-1 box">
+      col-6 pull-1
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-2 box">
+      col-6 pull-2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-3 box">
+      col-6 pull-3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-4 box">
+      col-6 pull-4
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-5 box">
+      col-6 pull-5
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pull-6 box">
+      col-6 pull-6
+    </div>
+  </div>
+  <p>Text Align system</p>
+  <div class="row">
+    <div class="col-4 box text-left">
+      left
+    </div>
+    <div class="col-4 box text-center">
+      center
+    </div>
+    <div class="col-4 box text-right">
+      right
+    </div>
+  </div>
+  <p>Position layout system</p>
+  <div class="row justify-content-center align-item-center show-grid" style="min-height: 50px">
+    row justify-content-center align-item-center
+  </div>
+</div>

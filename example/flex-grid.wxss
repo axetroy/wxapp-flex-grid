@@ -6,9 +6,9 @@
 
 .col, .row {
   display: flex; }
-  .col::after, .col::before, .row::after, .row::before {
-    content: "";
-    clear: both; }
+.col::after, .col::before, .row::after, .row::before {
+  content: "";
+  clear: both; }
 
 .order-0 {
   order: 0; }
