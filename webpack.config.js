@@ -28,7 +28,8 @@ module.exports = {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: [cssnano()]
+                plugins: [
+                ].concat(isProduction ? [cssnano()] : [])
               }
             },
             'sass-loader'
