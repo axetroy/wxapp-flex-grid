@@ -102,3 +102,9 @@
     text-align: $direction;
   }
 }
+
+@each $direction in $floatDirections {
+  .float-#{$direction} {
+    float: $direction;
+  }
+}
