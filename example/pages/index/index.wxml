@@ -171,7 +171,7 @@
     </div>
   </div>
   <p>Position layout system</p>
-  <div class="row justify-content-center align-item-center show-grid" style="min-height: 50px">
+  <div class="row justify-content-center align-item-center box" style="min-height: 200px">
     row justify-content-center align-item-center
   </div>
 </div>
