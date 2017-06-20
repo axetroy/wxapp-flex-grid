@@ -2,13 +2,30 @@
 <html lang="en"><head><link href="flex-grid.css" rel="stylesheet"></head>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>Wxapp Flex Grid System</title>
 <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
   .box{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgba(86, 61, 124, .15);
     border: 1px solid rgba(86, 61, 124, .2);
+  }
+  .dice{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #303030;
+  }
+
+  .point{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #303030;
   }
 </style>
 <body>
@@ -58,10 +75,6 @@
     <div class="col-6 box">
       col-6
     </div>
-  </div>
-  <div style="width:100%">
-    <div style="display:inline-block;width:50%;background-color:red;text-indent:10px">50%</div>
-    <div style="display:inline-block;width:50%;background-color:yellow;text-indent:10px">50%</div>
   </div>
   <p>Float system</p>
   <!--offset-->
@@ -186,8 +199,55 @@
     </div>
   </div>
   <p>Position layout system</p>
-  <div class="row justify-content-center align-item-center box" style="min-height: 200px">
+  <div class="row middle box" style="min-height: 200px">
     row justify-content-center align-item-center
+  </div>
+  <div class="row wrap">
+    <div class="col-4">
+      <div class="row top-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row top-right dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row right-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row right-bottom dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row bottom-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-bottom dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-top dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
   </div>
 </div>
 

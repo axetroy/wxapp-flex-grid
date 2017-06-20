@@ -388,4 +388,44 @@
 .text-center {
   text-align: center; }
 
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.middle {
+  justify-content: center;
+  align-items: center; }
+
+.top-middle, .middle-top {
+  justify-content: center;
+  align-items: flex-start; }
+
+.right-top, .top-right {
+  justify-content: flex-end; }
+
+.right-middle, .middle-right {
+  justify-content: flex-end;
+  align-items: center; }
+
+.right-bottom, .bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.bottom-middle, .middle-bottom {
+  justify-content: center;
+  align-items: flex-end; }
+
+.bottom-left, .left-bottom {
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.left-middle, .middle-left {
+  justify-content: flex-start;
+  align-items: center; }
+
+.left-top, .top-left {
+  justify-content: flex-start; }
+
 /*# sourceMappingURL=flex-grid.css.map*/

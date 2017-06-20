@@ -44,10 +44,6 @@
       col-6
     </div>
   </div>
-  <div style="width:100%">
-    <div style="display:inline-block;width:50%;background-color:red;text-indent:10px">50%</div>
-    <div style="display:inline-block;width:50%;background-color:yellow;text-indent:10px">50%</div>
-  </div>
   <p>Float system</p>
   <!--offset-->
   <div class="row">
@@ -171,7 +167,54 @@
     </div>
   </div>
   <p>Position layout system</p>
-  <div class="row justify-content-center align-item-center box" style="min-height: 200px">
+  <div class="row middle box" style="min-height: 200px">
     row justify-content-center align-item-center
+  </div>
+  <div class="row wrap">
+    <div class="col-4">
+      <div class="row top-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row top-right dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row right-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row right-bottom dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row bottom-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-bottom dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row left-top dice">
+        <div class="point"></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row middle dice">
+        <div class="point"></div>
+      </div>
+    </div>
   </div>
 </div>

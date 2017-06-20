@@ -11,3 +11,16 @@ div{
   border: 1px solid rgba(86, 61, 124, .2);
   text-indent: 10px;
 }
+
+.dice{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #303030;
+}
+
+.point{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #303030;
+}
