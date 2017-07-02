@@ -1,5 +1,7 @@
 # wxapp-flex-grid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/flex-grid.wxss.svg)](https://greenkeeper.io/)
+
 ![screenshot](https://github.com/axetroy/flex-grid.wxss/raw/master/screenshot.png)
 
 
